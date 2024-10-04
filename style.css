@@ -103,3 +103,48 @@ html {
 .author a:hover {
     text-decoration: underline;
 }
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    html, body {
+        display: flex;
+        justify-content: center; /* Center the container horizontally */
+        align-items: center; /* Center vertically */
+        padding: 0; /* Remove padding to prevent content from being pushed out */
+    }
+
+    /* Container - Adjust width and padding */
+    .container {
+        width: 90%; /* Use 90% of the screen width */
+        padding: 15px; /* Reduced padding for mobile */
+        margin: 0; /* Ensure no extra margin */
+    }
+
+    /* Timer Display - Adjust font size */
+    .timer-display {
+        font-size: 24px; /* Smaller font size for mobile */
+        width: 100%; /* Ensure full width */
+    }
+
+    /* Buttons - Stack vertically and adjust size */
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: stretch; /* Stretch buttons to fit full width */
+    }
+
+    .buttons button {
+        width: 100%; /* Buttons take full width */
+        font-size: 16px; /* Slightly smaller font for mobile */
+        margin: 10px 0; /* Add spacing between buttons */
+    }
+
+    /* Paused Time - Adjust width and font size */
+    .paused-time {
+        font-size: 16px; /* Smaller font */
+        width: 100%; /* Full width */
+    }
+
+    /* Author Section - Adjust font size */
+    .author {
+        font-size: 14px; /* Smaller font */
+    }
+}
